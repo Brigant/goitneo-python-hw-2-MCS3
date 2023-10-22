@@ -17,6 +17,8 @@ def input_error(func):
             return f"Caught the ValueError exception: {e}"
         except KeyError as e:
             return f"Caught the KeyError exception: {e}"
+        except IndexError as e:
+            return f"Caught the IndexError exception: {e}"
 
     return inner
 
